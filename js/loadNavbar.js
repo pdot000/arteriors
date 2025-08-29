@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("/components/navbar.html")
+    fetch("../components/navbar.html")
         .then(response => {
             if (!response.ok) throw new Error("Navbar not found");
             return response.text();
