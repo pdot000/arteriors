@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kontakt</title>
+        <link rel="icon" href="images/favicon.png" type="image/png">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="js/scripts.js" defer></script>
+        <script src="js/loadNavbar.js" defer></script>
+        <script src="js/loadFooter.js" defer></script>
+        <link rel="stylesheet" href="components/styles.css">
+    </head>
+    <body>
+        <div id="navbar"></div>
+        
+        <section class="relative h-1/2 bg-cover bg-center" style="background-image: url('images/bg.png');">
+            <div class="absolute bottom-12 left-24 text-white">
+            <h1 class="text-4xl font-bold">Kontakt</h1>
+            <div>Napisz, a wycenimy Twój projekt</div>
+            </div>
+        </section>
+        
+        <!-- Contact Form -->
+        <section class="p-24 bg-gray-100">
+            <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8">Skontaktuj się z nami</h2>
+            <form action="#" method="POST" class="max-w-2xl mx-auto" enctype="multipart/form-data">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <input type="text" name="name" placeholder="Imię" class="p-3 rounded-lg bg-gray-200">
+                    <input type="email" name="email" placeholder="Email" class="p-3 rounded-lg bg-gray-200">
+                </div>
+                <textarea name="message" placeholder="Wiadomość" class="w-full p-3 rounded-lg bg-gray-200 mt-6 h-40"></textarea>
+                <div class="mt-6">
+                    <label class="block text-left mb-2 font-medium">Załącz plik (opcjonalnie):</label>
+                    <input type="file" name="attachment" class="w-full p-3 rounded-lg bg-gray-200">
+                </div>
+                <button type="submit" class="bg-stone-400 text-white font-bold py-3 px-6 rounded-full shadow-md hover:bg-stone-500 transition mt-6">Wyślij</button>
+            </form>
+            </div>
+        </section></div>
+        </section>
+        
+        <div id="footer"></div>
+    </body>
+</html>
