@@ -7,6 +7,7 @@
     <link rel="icon" href="images/favicon.png" type="image/png">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="js/scripts.js" defer></script>
+    <script src="js/loadNavbar.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js" defer></script>
     <link rel="stylesheet" href="components/styles.css">
     <script>
@@ -19,40 +20,6 @@
     
 </head>
 <body class="bg-gray-100 text-gray-900">
-    <!-- HEADER START -->
-    <header class="fixed top-6 left-1/2 transform -translate-x-1/2 bg-white bg-opacity-80 backdrop-blur-md py-7 rounded-full shadow-lg flex justify-between items-center w-5/6 z-50 navbar" style="padding-left: 50px; padding-right: 50px;">
-        <nav class="flex space-x-6 flex-1 desktop-menu">
-            <a href="index.html" class="hover:text-gray-600">Strona główna</a>
-            <a href="projects.html" class="hover:text-gray-600">Projekty</a>
-            <a href="pricing.html" class="hover:text-gray-600">Oferta</a>
-        </nav>
-        <div class="logo-container text-center">
-            <a href="index.html">
-                <img src="images/logo_visual.svg" alt="Logo" class="w-12 mx-auto">
-                <img src="images/logo_name.svg" alt="Logo" class="site-name w-12 pt-2 mx-auto">
-            </a>
-        </div>
-        <nav class="flex-1 space-x-6 text-right desktop-menu">
-            <a href="about.html" class="hover:text-gray-600">O mnie</a>
-            <a href="contact.html" class="hover:text-gray-600">Kontakt</a>
-        </nav>
-        
-        <!-- Mobile Menu Button -->
-        <button class="mobile-menu ml-auto" onclick="toggleMenu()">
-            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-            </svg>
-        </button>
-    </header>
-    <div id="menu-dropdown" class="hidden fixed top-16 right-6 bg-white shadow-lg rounded-lg p-4 z-50">
-        <a href="index.html" class="block py-2 px-4 hover:bg-gray-200">Strona główna</a>
-        <a href="projects.html" class="block py-2 px-4 hover:bg-gray-200">Projekty</a>
-        <a href="pricing.html" class="block py-2 px-4 hover:bg-gray-200">Oferta</a>
-        <a href="about.html" class="block py-2 px-4 hover:bg-gray-200">O mnie</a>
-        <a href="contact.html" class="block py-2 px-4 hover:bg-gray-200">Kontakt</a>
-    </div>
-    <!-- HEADER END -->
-    
     <!-- Hero Section -->
     <section id="home" class="h-screen flex items-center justify-center bg-cover bg-center px-4 py-6 md:px-24 md:py-24" style="background-image: url('images/bg.png');">
         <div class="text-center backdrop-blur-lg p-10 rounded-xl bg-white bg-opacity-40 sticky top-0 transition-transform duration-100" id="scroll-up-div">
