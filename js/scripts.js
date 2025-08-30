@@ -8,8 +8,10 @@ window.addEventListener("scroll", function() {
         var navbar = document.querySelector(".navbar");
         if (window.scrollY > lastScrollY + 20 && window.scrollY > 20) { // Adding a threshold of 10px
             navbar.classList.add("shrink", "py-2");
+            navbar.classList.remove("expand");
         } else if (window.scrollY < lastScrollY - 50 || window.scrollY <= 100) { // Adding a threshold of 10px
             navbar.classList.remove("shrink", "py-2");
+            navbar.classList.add("expand");
         }
         lastScrollY = window.scrollY;
     }, 10);

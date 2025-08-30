@@ -1,17 +1,17 @@
 body {
     font-family: sans-serif
 }
-.navbar { 
-    font-weight: 200;
-    /* transition: all 0.3s ease-in-out; */
-}
-.navbar.shrink { padding: 18px 35px; transition: all 0.3s ease-in-out;}
-.site-name { transition: opacity 0.2s ease-in-out; }
+.navbar { font-weight: 200; }
+.navbar.shrink { padding: 18px 35px; transition: all 0.3s ease-in-out; }
+.navbar.expand { transition: all 0.3s ease-in-out; }
+.site-name { transition: opacity 0.9s ease-in-out 2s; }
 .navbar.shrink .site-name { opacity: 0; visibility: hidden; }
-.logo-container { transition: transform 0.3s ease-in-out; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
-.navbar.shrink .logo-container { transform: translate(-50%, -35%); }
-.logo-container img { transition: transform 0.3s ease-in-out; }
+.logo-container { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+.navbar.shrink .logo-container { transform: translate(-50%, -35%); transition: transform 0.2s ease-in-out; }
+.navbar.expand .logo-container { transition: transform 0.2s ease-in-out; }
+.logo-container img { transition: transform 0.7s ease-in-out; }
 .navbar.shrink .logo-container img { transform: scale(1.2); }
+.navbar.expand .logo-container img { transition: transform 0.7s ease-in-out; }
 .mobile-menu { display: none; }
 .hide-desktop-menu { display: none; }
 @media (max-width: 900px) {
