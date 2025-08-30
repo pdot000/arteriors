@@ -4,7 +4,7 @@ body {
 .navbar { 
     font-weight: 200;
     transition: all 0.3s ease-in-out;
-    transform-origin: center;
+    transform-origin: center top;
     will-change: transform;
 }
 .navbar.shrink { padding: 18px 35px; }
