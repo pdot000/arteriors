@@ -9,9 +9,9 @@ body {
 .logo-container { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
 .navbar.shrink .logo-container { transform: translate(-50%, -35%); transition: transform 0.2s ease-in-out; }
 .navbar.expand .logo-container { transition: transform 0.2s ease-in-out; }
-.logo-container img { transition: transform 0.7s ease-in-out; }
+.logo-container img { transition: transform 0.3s ease-in-out; }
 .navbar.shrink .logo-container img { transform: scale(1.2); }
-.navbar.expand .logo-container img { transition: transform 0.7s ease-in-out; }
+.navbar.expand .logo-container img { transition: transform 0.3s ease-in-out; }
 .mobile-menu { display: none; }
 .hide-desktop-menu { display: none; }
 @media (max-width: 900px) {
