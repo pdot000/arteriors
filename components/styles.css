@@ -4,8 +4,6 @@ body {
 .navbar { 
     font-weight: 200;
     transition: all 0.3s ease-in-out;
-    transform-origin: center top;
-    will-change: transform;
 }
 .navbar.shrink { padding: 18px 35px; }
 .site-name { transition: opacity 0.2s ease-in-out; }
@@ -21,11 +19,8 @@ body {
     .mobile-menu { display: block !important; }
     .navbar { padding-right: 30px !important; }
 }
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  .navbar {
-    transform: translateZ(0); /* Force hardware acceleration */
-    backface-visibility: hidden; /* Prevent flickering */
-  }
+.no-transition {
+  transition: none !important;
 }
 .navbar.hidden { display: none; }
 .desktop-menu.hidden { display: none; }
