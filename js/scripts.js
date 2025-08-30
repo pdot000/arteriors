@@ -29,10 +29,3 @@ window.addEventListener("click", function(event) {
         });
     }
 });
-
-document.addEventListener('DOMContentLoaded', function() {
-  // Remove the no-transition class after a short delay
-  setTimeout(() => {
-    document.body.classList.remove('no-transition');
-  }, 100);
-});

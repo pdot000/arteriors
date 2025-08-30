@@ -3,9 +3,9 @@ body {
 }
 .navbar { 
     font-weight: 200;
-    transition: all 0.3s ease-in-out;
+    /* transition: all 0.3s ease-in-out; */
 }
-.navbar.shrink { padding: 18px 35px; }
+.navbar.shrink { padding: 18px 35px; transition: all 0.3s ease-in-out;}
 .site-name { transition: opacity 0.2s ease-in-out; }
 .navbar.shrink .site-name { opacity: 0; visibility: hidden; }
 .logo-container { transition: transform 0.3s ease-in-out; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
@@ -18,9 +18,6 @@ body {
     .desktop-menu { display: none !important; }
     .mobile-menu { display: block !important; }
     .navbar { padding-right: 30px !important; }
-}
-.no-transition {
-  transition: none !important;
 }
 .navbar.hidden { display: none; }
 .desktop-menu.hidden { display: none; }
